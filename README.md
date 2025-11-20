@@ -1,70 +1,209 @@
-# React.js and Tailwind CSS Assignment
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
 
-## Assignment Overview
+# React Week 3 — JSX, Components, Hooks & Tailwind CSS
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
 
-## Getting Started
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+This project is a React application built using **Vite**, styled with **Tailwind CSS**, and demonstrates:
 
-## Files Included
+* Component architecture
+* State management with hooks
+* Custom hook (localStorage persistence)
+* Context API (Dark/Light mode theme)
+* API Integration with search & pagination
+* Responsive UI
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+---
 
-## Requirements
+## 🚀 Features
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+### ✅ **Task Manager**
 
-## Project Structure
+* Add tasks
+* Mark tasks as completed
+* Delete tasks
+* Filter (All, Active, Completed)
+* Persistent storage with `localStorage`
+* Uses: `useState`, `useEffect`, custom hook
+
+### ✅ **API Integration**
+
+* Data fetched from JSONPlaceholder
+* Pagination
+* Search filter
+* Loading & error handling
+
+### ✅ **Dark Mode / Light Mode**
+
+* Implemented with Context API (`useContext`)
+* Persistent theme saved in localStorage
+* Tailwind `dark:` classes
+
+### ✅ **Component Architecture**
+
+* Button
+* Card
+* Navbar
+* Footer
+* Layout wrapper
+
+---
+
+## 🛠️ **Installation & Setup**
+
+### 1️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 2️⃣ Run the development server
+
+```
+npm run dev
+```
+
+### 3️⃣ Open the app
+
+Open the link Vite gives you, usually:
+
+```
+http://localhost:5173/
+```
+
+---
+
+##  **Project Structure**
 
 ```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+ ├── components/
+ │      ├── Button.jsx
+ │      ├── Card.jsx
+ │      ├── Navbar.jsx
+ │      ├── Footer.jsx
+ │      └── Layout.jsx
+ ├── pages/
+ │      ├── Home.jsx
+ │      ├── ApiPage.jsx
+ │      └── TaskManager.jsx
+ ├── context/
+ │      └── ThemeContext.jsx
+ ├── hooks/
+ │      └── useLocalStorage.js
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
 ```
 
-## Submission
+---
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## 🌐 **Live Demo (Vercel Deployment)**
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+🔗 *(Add your Vercel URL here after deploying)*
 
-## Resources
+---
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+## 📸 **Screenshots**
+
+Add screenshots like this:
+
+```
+![Home Page](screenshots/home.png)
+![Task Manager](screenshots/tasks.png)
+![API Page](screenshots/api.png)
+![Dark Mode](screenshots/darkmode.png)
+```
+
+(Create a folder named `screenshots` in your repo)
+
+---
+
+# 📌 **STEP 4 — Add Screenshots**
+
+1. Run your app
+2. Press **Windows + Shift + S**
+3. Select **Rectangular Snip**
+4. Capture:
+
+   * Home Page
+   * Tasks Page
+   * API Page
+   * Dark Mode
+5. Save them in folder:
+
+```
+react-js-project/
+   screenshots/
+      home.png
+      tasks.png
+      api.png
+      darkmode.png
+```
+
+
+
+---
+
+# 🚀 **STEP 5 — Deploy to Vercel**
+
+Follow these *exact* steps:
+
+### 1️⃣ Go to Vercel
+
+[https://vercel.com/](https://vercel.com/)
+
+### 2️⃣ Login with GitHub
+
+(Allow access)
+
+### 3️⃣ Click **“New Project”**
+
+### 4️⃣ Select your repo:
+
+**react-js-jsx-and-css-mastering-front-end-development-beverly-004**
+
+### 5️⃣ Click **"Deploy"**
+
+Vercel will:
+✔ Install dependencies
+✔ Auto-detect Vite
+✔ Build
+✔ Deploy your site
+
+### 6️⃣ Copy the live URL
+
+Example:
+
+```
+https://react-week3-beverly.vercel.app/
+```
+
+
+---
+
+# 🔼 **STEP 6 — Push Everything to GitHub**
+
+In VS Code:
+
+### 1️⃣ Go to Source Control (left sidebar)
+
+### 2️⃣ Stage all changes
+
+### 3️⃣ Commit message:
+
+```
+Completed Week 3 Assignment
+```
+
+### 4️⃣ Push:
+
+Click **Sync Changes** or **Push**
+
+Once pushed, GitHub Classroom will automatically grade it.
+
+---
+
+
+
+
