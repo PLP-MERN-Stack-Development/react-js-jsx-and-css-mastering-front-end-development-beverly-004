@@ -1,8 +1,5 @@
 
-
-# React Week 3 — JSX, Components, Hooks & Tailwind CSS
-
-
+# 📘 React Week 3 — JSX, Components, Hooks & Tailwind CSS
 
 This project is a React application built using **Vite**, styled with **Tailwind CSS**, and demonstrates:
 
@@ -17,55 +14,62 @@ This project is a React application built using **Vite**, styled with **Tailwind
 
 ## 🚀 Features
 
-### ✅ **Task Manager**
+### ✅ Task Manager
 
 * Add tasks
 * Mark tasks as completed
 * Delete tasks
-* Filter (All, Active, Completed)
-* Persistent storage with `localStorage`
-* Uses: `useState`, `useEffect`, custom hook
+* Filter tasks (All, Active, Completed)
+* Persistent storage using a custom `useLocalStorage` hook
+* Hooks used: `useState`, `useEffect`
 
-### ✅ **API Integration**
+### ✅ API Integration
 
-* Data fetched from JSONPlaceholder
+* Fetches data from JSONPlaceholder
+* Search functionality
 * Pagination
-* Search filter
-* Loading & error handling
+* Loading and error states
+* Styled with Tailwind CSS
 
-### ✅ **Dark Mode / Light Mode**
+### ✅ Dark Mode / Light Mode
 
-* Implemented with Context API (`useContext`)
-* Persistent theme saved in localStorage
-* Tailwind `dark:` classes
+* Implemented using **Context API (`useContext`)**
+* Toggle button in Navbar
+* Theme saved in localStorage
+* Tailwind `dark:` classes automatically enabled
 
-### ✅ **Component Architecture**
+### ✅ Component Architecture
 
-* Button
-* Card
-* Navbar
-* Footer
-* Layout wrapper
+* Reusable **Button** component
+* **Card** component
+* **Navbar** with theme switcher
+* **Footer**
+* **Layout** wrapper for shared UI
 
 ---
 
-## 🛠️ **Installation & Setup**
+## 🛠️ Installation & Setup
 
-### 1️⃣ Install dependencies
+### 1️⃣ Clone the repository
 
+```sh
+git clone https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-beverly-004
+cd react-js-jsx-and-css-mastering-front-end-development-beverly-004
 ```
+
+### 2️⃣ Install dependencies
+
+```sh
 npm install
 ```
 
-### 2️⃣ Run the development server
+### 3️⃣ Start development server
 
-```
+```sh
 npm run dev
 ```
 
-### 3️⃣ Open the app
-
-Open the link Vite gives you, usually:
+The app runs at:
 
 ```
 http://localhost:5173/
@@ -73,7 +77,12 @@ http://localhost:5173/
 
 ---
 
-##  **Project Structure**
+## 🌐 Live Demo (Vercel Deployment)
+
+
+https://react-js-jsx-and-css-mastering-fron-weld.vercel.app/
+
+## 📁 Project Structure
 
 ```
 src/
@@ -98,111 +107,57 @@ src/
 
 ---
 
-## 🌐 **Live Demo (Vercel Deployment)**
+## 📸 Screenshots
 
-🔗 *(Add your Vercel URL here after deploying)*
+screenshots/home.png
+screenshots/tasks.png
+screenshots/api.png
+screenshots/darkmode.png
+```
+
+```md
+### 🏠 Home Page
+![Home Page](dist\screenshots\home.png)
+
+### ✅ Task Manager
+![Task Manager](dist\screenshots\tasks.png)
+
+### 🌐 API Page
+![API Page](dist\screenshots\api.png)
+
+### 🌙 Dark Mode
+![Dark Mode](dist\screenshots\darkmode.png)
+```
 
 ---
 
-## 📸 **Screenshots**
+## 🧪 Technologies Used
 
-Add screenshots like this:
-
-```
-![Home Page](screenshots/home.png)
-![Task Manager](screenshots/tasks.png)
-![API Page](screenshots/api.png)
-![Dark Mode](screenshots/darkmode.png)
-```
-
-(Create a folder named `screenshots` in your repo)
+* **React**
+* **Vite**
+* **Tailwind CSS**
+* **JavaScript (ES6)**
+* **Context API**
+* **React Router**
+* **JSONPlaceholder API**
+* **Vercel Deployment**
 
 ---
 
-# 📌 **STEP 4 — Add Screenshots**
+## 📤 Deployment Instructions (Manual Upload)
 
-1. Run your app
-2. Press **Windows + Shift + S**
-3. Select **Rectangular Snip**
-4. Capture:
-
-   * Home Page
-   * Tasks Page
-   * API Page
-   * Dark Mode
-5. Save them in folder:
-
-```
-react-js-project/
-   screenshots/
-      home.png
-      tasks.png
-      api.png
-      darkmode.png
-```
+1. Build the app:
 
 
-
----
-
-# 🚀 **STEP 5 — Deploy to Vercel**
-
-Follow these *exact* steps:
-
-### 1️⃣ Go to Vercel
-
-[https://vercel.com/](https://vercel.com/)
-
-### 2️⃣ Login with GitHub
-
-(Allow access)
-
-### 3️⃣ Click **“New Project”**
-
-### 4️⃣ Select your repo:
-
-**react-js-jsx-and-css-mastering-front-end-development-beverly-004**
-
-### 5️⃣ Click **"Deploy"**
-
-Vercel will:
-✔ Install dependencies
-✔ Auto-detect Vite
-✔ Build
-✔ Deploy your site
-
-### 6️⃣ Copy the live URL
-
-Example:
-
-```
-https://react-week3-beverly.vercel.app/
-```
+npm run build
 
 
----
-
-# 🔼 **STEP 6 — Push Everything to GitHub**
-
-In VS Code:
-
-### 1️⃣ Go to Source Control (left sidebar)
-
-### 2️⃣ Stage all changes
-
-### 3️⃣ Commit message:
-
-```
-Completed Week 3 Assignment
-```
-
-### 4️⃣ Push:
-
-Click **Sync Changes** or **Push**
-
-Once pushed, GitHub Classroom will automatically grade it.
-
----
+2. Go to Vercel → [https://vercel.com/new/project](https://vercel.com/new/project)
+3. Scroll to **Upload** section
+4. Upload the `dist` folder
+5. Deploy and copy the URL
+6. Add the URL to README.md
+7. Push changes to GitHub
 
 
 
