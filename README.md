@@ -117,16 +117,16 @@ screenshots/darkmode.png
 
 ```md
 ### 🏠 Home Page
-![Home Page](dist\screenshots\home.png)
+![Home Page](src\screenshots\home.png)
 
 ### ✅ Task Manager
-![Task Manager](dist\screenshots\tasks.png)
+![Task Manager](src\screenshots\tasks.png)
 
 ### 🌐 API Page
-![API Page](dist\screenshots\api.png)
+![API Page](src\screenshots\api.png)
 
 ### 🌙 Dark Mode
-![Dark Mode](dist\screenshots\darkmode.png)
+![Dark Mode](src\screenshots\darkmode.png)
 ```
 
 ---
